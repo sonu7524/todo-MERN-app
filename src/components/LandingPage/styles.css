@@ -1,0 +1,47 @@
+.home{
+    background-color: var(--lightpurple);
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    height: 88vh;
+}
+.home-content{
+    width: 40%;
+    margin-left: 3rem;
+}
+.home-title{
+    font-size: 4rem;
+    color: var(--black);
+    text-shadow: 2px 2px 2px #000000;
+    
+}
+.home-img{
+    width: 57%;
+    margin-left: 1rem;
+}
+.title-medium{
+    font-size: 6rem;
+    margin-top: -3rem;
+}
+.title-huge{
+    font-size: 4rem;
+    margin-top: -3rem;
+    color: var(--white);
+    text-shadow: 2px 2px 4px #000000;
+}
+.main-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.home-btn{
+    margin-top: -2rem;
+}

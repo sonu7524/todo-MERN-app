@@ -1,0 +1,38 @@
+.todo-card{
+    border: 0.1px solid rgba(88, 87, 87, 0.822);
+    box-shadow: 8px 8px 10px rgb(175, 174, 174);
+    padding: 0rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.card-details{
+    height: 5rem;
+}
+.todo-card:hover{
+    box-shadow: 8px 8px 10px rgb(175, 174, 174);
+    transform: scale(1.05);
+}
+.card-content{
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-title{
+    font-weight: bold;
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-file{
+    display: flex;
+    align-items: center;
+}
+.card-modification{
+    display: flex;
+    gap: 0.5rem;
+}

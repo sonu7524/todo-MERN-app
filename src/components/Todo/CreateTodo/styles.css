@@ -1,0 +1,102 @@
+
+.create-todo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+  padding: 9px;
+}
+.create-todo-form{
+  max-width: 800px;
+  background: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.form-todo{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-todo > input {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.upload-file{
+  padding: 1rem 1.5rem;
+}
+
+.custum-file-upload {
+  width: 49vw;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #cacaca;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px rgba(0,0,0,0.1);
+}
+
+.custum-file-upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .icon svg {
+  height: 80px;
+  fill: rgba(75, 85, 99, 1);
+}
+
+.custum-file-upload .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .text span {
+  font-weight: 400;
+  color: rgba(75, 85, 99, 1);
+}
+
+.custum-file-upload input {
+  display: none;
+}
+
+.todo-status{
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.todo-priority{
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+.message{
+  font-size: 1.2rem;
+}
+.selected-files{
+  display: flex;
+  flex-direction: column;
+  gap: -0.5rem;
+}
+.selected-file{
+  display: flex;
+  height: 1rem;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+.create-btn{
+  margin-bottom: 2rem;
+}

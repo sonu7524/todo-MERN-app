@@ -1,0 +1,93 @@
+.dashboard-background{
+    height: 85vh;
+}
+.blurred-background{
+    height: 85vh;
+    position: relative;
+    z-index: -1;
+    filter: blur(5px);
+}
+  
+.dashboard-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+.category{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 0rem 2rem;
+    
+}
+
+.pending{
+    border: 1px solid red;
+    background-color: white;
+    border-radius: 1rem;
+    width: 33%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.in-progress{
+    border: 1px solid orange;
+    background-color: white;
+    border-radius: 1rem;
+    width: 33%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.completed{
+    border: 1px solid green;
+    background-color: white;
+    border-radius: 1rem;
+    width: 33%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pending-title{
+    font-size: 1.2rem;
+    color: red;
+}
+
+.in-progress-title{
+    font-size: 1.2rem;
+    color: orange;
+}
+.completed-title{
+    font-size: 1.2rem;
+    color: green;
+}
+.edit-page{
+    position: absolute;
+    z-index: 1000;
+    top: 8rem;
+    left: 20rem;
+}
+
+.edit-page-content{
+    position: relative;
+}
+
+.cancel-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 2rem;
+    color: red;
+}
