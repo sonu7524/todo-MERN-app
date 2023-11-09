@@ -4,6 +4,7 @@ import ButtonComponent from "../../common/Button";
 import AddRoundedIcon from '@mui/icons-material/AddRounded';
 import FileCopyRoundedIcon from '@mui/icons-material/FileCopyRounded';
 import { updateTodo } from "../../../functions/updateTodo";
+import EditNoteOutlinedIcon from '@mui/icons-material/EditNoteOutlined';
 
 
 export default function EditTodo({todo}) { 
@@ -85,7 +86,7 @@ export default function EditTodo({todo}) {
                             </div>
                         ))}
                     </div>
-                    <div  onClick={handleNewTodo} className="create-btn"><ButtonComponent  text="Edit" bgColor={"black"} icon={<AddRoundedIcon />} isOutline={false} /></div>
+                    <div  onClick={handleNewTodo} className="create-btn"><ButtonComponent  text="Edit" bgColor={"black"} icon={<EditNoteOutlinedIcon />} isOutline={false} /></div>
                 </form>
             </div>
     )
