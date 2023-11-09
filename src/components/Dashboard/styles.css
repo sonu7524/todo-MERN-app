@@ -93,8 +93,8 @@
 
 .edit-cancel-icon{
     position: absolute;
-    top: -0.5rem;
-    right: -0.5rem;
+    top: -0.7rem;
+    right: -0.7rem;
     cursor: pointer;
     z-index: 1000;
     font-size: 3.5rem;
