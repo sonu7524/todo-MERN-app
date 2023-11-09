@@ -10,6 +10,7 @@ import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 import CreateTodo from "../Todo/CreateTodo";
 import {updateTodoStatus} from "../../functions/updateTodoStatus";
 
+
 export default function Dashboard() {
     let [todos, setTodos] = useState([]);
     let [pendingTodos, setPendingTodos] = useState([]);
@@ -19,6 +20,7 @@ export default function Dashboard() {
     let [selectedTodo, setSelectedTodo] = useState(null);
     let [isCreateBtnClicked, setIsCreateBtnClicked] = useState(false);
     let [isDeleteIconClicked, setIsDeleteIconClicked] = useState(false);
+    let [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
         getData();
@@ -108,25 +110,25 @@ export default function Dashboard() {
                 </div>
             </div>
             {selectedTodo && (
-                <div className="edit-page">
+                <div className="edit-page"  onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                     <div className="edit-page-content">
                         <EditTodo todo={selectedTodo} />
-                        <CancelOutlinedIcon className="cancel-icon" onClick={() => {
-                            setSelectedTodo(null);
-                        }}  
-                        />
+                        {isHovered && <CancelOutlinedIcon sx={{transform: "scale(1.2)"}} className="edit-cancel-icon" onClick={() => {
+                                    setSelectedTodo(null);
+                                }}
+                        />}
                     </div>
                 </div>
             )}
 
             {isCreateBtnClicked && (
-                <div className="edit-page">
-                    <div className="edit-page-content">
+                <div className="edit-page" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                    <div className="create-page-content">
                         <CreateTodo />
-                        <CancelOutlinedIcon className="cancel-icon" onClick={() => {
-                            setIsCreateBtnClicked(false);
-                        }}  
-                        />
+                        {isHovered && <CancelOutlinedIcon sx={{transform: "scale(1.2)"}} className="create-cancel-icon" onClick={() => {
+                                    setIsCreateBtnClicked(false);
+                                }}
+                        />}
                     </div>
                 </div>
             )}
