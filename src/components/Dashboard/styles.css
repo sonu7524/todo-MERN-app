@@ -97,7 +97,7 @@
     right: -1rem;
     cursor: pointer;
     z-index: 1000;
-    font-size: 2rem;
+    font-size: 3rem;
     color: red;
 }
 
@@ -111,6 +111,6 @@
     right: -0.3rem;
     cursor: pointer;
     z-index: 1000;
-    font-size: 2rem;
+    font-size: 3rem;
     color: red;
 }
