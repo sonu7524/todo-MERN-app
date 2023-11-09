@@ -22,7 +22,7 @@ export default function Header() {
     const isprofileMenu =  <div className="profile-menu">
                                 <Link to="/"><p className="link2">HOME</p></Link>
                                 <Link to="/account"><p className="link2">ACCOUNT</p></Link>
-                                <Link to="/dashboard"><Button text="Dashboard" color="var(--blue)" bgColor="var(--white)" /></Link>
+                                <Link to="/dashboard"><Button text="Dashboard" color="var(--black)" bgColor="var(--white)" /></Link>
                                 <p className="link2" onClick={handleLogout}><LogoutIcon /></p>
                             </div>
     return (
