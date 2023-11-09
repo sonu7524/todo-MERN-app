@@ -4,7 +4,6 @@ import HomePage from "./pages/HomePage";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Loader from "./components/common/Loader";
 import AccountPage from "./pages/AccountPage";
-import CreateTodoPage from "./pages/CreateTodoPage";
 const LoginPage = lazy(() => import("./pages/LoginPage"));
 const DashboardPage = lazy(() => import("./pages/DashboardPage"));
 
