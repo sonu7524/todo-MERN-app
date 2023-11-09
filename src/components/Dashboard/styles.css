@@ -93,11 +93,11 @@
 
 .edit-cancel-icon{
     position: absolute;
-    top: -1rem;
-    right: -1rem;
+    top: 0rem;
+    right: 0rem;
     cursor: pointer;
     z-index: 1000;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: red;
 }
 
@@ -107,10 +107,10 @@
 
 .create-cancel-icon{
     position: absolute;
-    top: -0.3rem;
-    right: -0.3rem;
+    top: 0rem;
+    right: 0rem;
     cursor: pointer;
     z-index: 1000;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: red;
 }
