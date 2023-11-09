@@ -17,7 +17,6 @@ function App() {
         <Routes>
           <Route path="/register" element={<SignupPage />} />
           <Route path="/" element={<HomePage />} />
-          <Route path="/create-todo" element={<CreateTodoPage />} />
           {authToken ? <Route path="/login" element={<Navigate to="/dashboard" />} /> : <Route path="/login" element={<LoginPage />} />}
           {authToken ? <Route path="/dashboard" element={<DashboardPage />} /> : <Route path="/dashboard" element={<Navigate to="/login" />} />}
           {authToken ? <Route path="/account" element={<AccountPage />} /> : <Route path="/account" element={<Navigate to="/login" />} />}
