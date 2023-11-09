@@ -91,10 +91,24 @@
     position: relative;
 }
 
-.cancel-icon{
+.edit-cancel-icon{
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -1rem;
+    right: -1rem;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 2rem;
+    color: red;
+}
+
+.create-page-content{
+    position: relative;
+}
+
+.create-cancel-icon{
+    position: absolute;
+    top: -0.3rem;
+    right: -0.3rem;
     cursor: pointer;
     z-index: 1000;
     font-size: 2rem;
