@@ -32,6 +32,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .in-progress{
@@ -44,6 +45,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .completed{
@@ -56,6 +58,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .pending-title{
