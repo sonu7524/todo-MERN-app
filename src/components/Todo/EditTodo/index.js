@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import "./styles.css";
 import ButtonComponent from "../../common/Button";
 import AddRoundedIcon from '@mui/icons-material/AddRounded';
-import axios from "axios";
 import FileCopyRoundedIcon from '@mui/icons-material/FileCopyRounded';
 import { updateTodo } from "../../../functions/updateTodo";
 
 
 export default function EditTodo({todo}) { 
-    let[todoId,setTodoId] = useState(todo._id);
     let[title,setTitle] = useState(todo.title);
     let[description,setDescription] = useState(todo.description);
     let[dueDate,setDueDate] = useState(todo.dueDate);
@@ -17,12 +15,6 @@ export default function EditTodo({todo}) {
     let[selectedFiles,setSelectedFiles] = useState(todo.files);
     let[message,setMessage] = useState("");
     let[messageColor,setMessageColor] = useState("");
-
-
-    const handleDateChange = (e) => {
-        const date = new Date(e.target.value);
-        setDueDate(date);
-    }
 
     const handleFileChange = (e) => {
         const files = Array.from(e.target.files);
@@ -41,7 +33,7 @@ export default function EditTodo({todo}) {
         for (let i = 0; i < selectedFiles.length; i++) {
             formData.append("files", selectedFiles[i]);
         }
-        const response = await updateTodo(formData, todoId);
+        const response = await updateTodo(formData, todo._id);
 
         if(response.todo) {
             setMessage("Todo edited successfully");

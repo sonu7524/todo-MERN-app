@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles.css";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import PendingIcon from '@mui/icons-material/Pending';
@@ -9,7 +9,6 @@ import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
 import axios from "axios";
 
 export default function TodoCard({todo, setSelectedTodo, setIsDeleteIconClicked}) {
-    let[isHovered, setIsHovered] = useState(false);
     const handleDelete = () => {
         const auth_token = sessionStorage.getItem("auth_token");
         const response = axios.delete("https://todolist-mern-x95t.onrender.com/api/todo/delete/"+todo._id, {
@@ -23,7 +22,7 @@ export default function TodoCard({todo, setSelectedTodo, setIsDeleteIconClicked}
         }
     }
     return (
-        <div className="todo-card" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+        <div className="todo-card">
             <div className="card-content">
                 <div className="card-details">
                     <p className="card-title">{todo.title}</p>

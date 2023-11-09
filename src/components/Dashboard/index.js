@@ -5,7 +5,6 @@ import "./styles.css";
 import TodoCard from "../common/Card";
 import { getAllTodos } from "../../functions/getAllTodos";
 import Loader from "../common/Loader";
-import { Link } from "react-router-dom";
 import EditTodo from "../Todo/EditTodo";
 import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 import CreateTodo from "../Todo/CreateTodo";
